@@ -1,0 +1,6 @@
+PREFIX : <http://example.org/music#>
+
+SELECT ?title ?year WHERE {
+  ?artist a :Artist ; :name "Daft Punk" ; :made ?album .
+  ?album :title ?title ; :year ?year .
+}
